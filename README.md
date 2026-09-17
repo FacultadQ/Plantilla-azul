@@ -14,7 +14,7 @@ Para alojarlo, conserva `index.html` y las carpetas `assets` e `img` juntos en l
 
 ## Contenido pendiente
 
-Sustituir los avisos de contacto, sede, teléfono y fecha cuando exista información confirmada. No se incluyeron datos inventados ni enlaces de correo de ejemplo.
+Sustituir los avisos de sede, teléfono y fecha cuando exista información confirmada. No se incluyeron datos inventados ni enlaces de correo de ejemplo.
 
 El cronograma expresa frecuencias del plan, no fechas confirmadas. Bienestar conserva el compromiso de al menos una actividad por semestre.
 

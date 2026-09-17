@@ -29,3 +29,5 @@ Validación realizada: sintaxis JavaScript, referencias a recursos locales, dest
 El contenido corresponde a `assets/plan-de-trabajo-final.pdf`. Los retratos aparecen debajo del título, con los cargos de propietaria y suplente. El cronograma incluye las 19 acciones del documento, con los meses agrupados por semestre y numerados del 1 al 24.
 
 Para regenerar el archivo autónomo después de editar la página, ejecuta `python3 scripts/build_offline.py`.
+
+La tipografía editorial es Latin Modern Roman (regular, cursiva, negrita y negrita cursiva), distribuida localmente en `assets/lmroman10-*.otf`. Fuente: https://ctan.org/pkg/lm. Licencia: `assets/latin-modern-GUST-FONT-LICENSE.txt`. Archivo se conserva para el cuerpo y los controles.

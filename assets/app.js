@@ -44,3 +44,15 @@ function preparePrint() {
 function restorePrint() { if(!printState)return;printState.details.forEach(([el,open])=>{el.open=open;});printState.hidden.forEach(el=>{el.hidden=true;});printState=null; }
 window.addEventListener('beforeprint',preparePrint);window.addEventListener('afterprint',restorePrint);
 document.querySelector('.print-button').addEventListener('click',()=>{preparePrint();window.print();restorePrint();});
+
+const strip = document.querySelector('.community-strip');
+const stripToggle = document.querySelector('.community-strip-toggle');
+if (strip && stripToggle) {
+  stripToggle.hidden = false;
+  stripToggle.addEventListener('click', () => {
+    const paused = strip.classList.toggle('is-paused');
+    stripToggle.setAttribute('aria-pressed', String(paused));
+    stripToggle.setAttribute('aria-label', paused ? 'Reanudar movimiento de las frases' : 'Pausar movimiento de las frases');
+    stripToggle.textContent = paused ? '▶' : 'Ⅱ';
+  });
+}

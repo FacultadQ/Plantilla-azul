@@ -11,3 +11,44 @@
 
 @media(max-width:600px){.candidate-photo{padding:14px}.candidate-photo img{height:300px}.candidate p:first-of-type{font-size:24px!important}}
 @media print{.candidate-photo{padding:10px}.candidate-photo img{height:180px}}
+
+/* Final plan: prominent candidates and comfortable reading sizes. */
+html{font-size:18px}
+.hero-layout{display:block;padding-top:28px}
+h1{font-size:clamp(64px,8vw,110px);margin:24px 0 32px}
+h1 br{display:none}h1 em::before{content:' '}
+.candidate-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(20px,3vw,36px);margin:0 0 38px;scroll-margin-top:30px}
+.candidate{min-width:0}
+.candidate-photo{padding:14px;margin:0}
+.candidate-photo img{height:clamp(240px,27vw,330px)}
+.candidate .candidate-name{font:400 clamp(27px,2.7vw,34px)/1.25 'Bodoni Moda',Georgia,serif!important;margin:18px 0 8px;overflow-wrap:break-word}
+.candidate .candidate-role{font:500 18px/1.5 Archivo,sans-serif!important;margin:0;color:var(--tinta)}
+.hero-copy{max-width:60ch;font-size:20px!important}
+.hero-actions{gap:20px 28px}.button,.text-link{font-size:18px}
+.plan-section{padding:52px 0;border-top:1px solid var(--regla)}
+.plan-section p,.plan-section li{font-size:19px!important;line-height:1.8;color:var(--texto2)}
+.plan-section p{margin:0 0 22px}.plan-section ol{padding-left:1.5em;margin:18px 0 28px}.plan-section li{padding-left:8px;margin-bottom:16px}
+.plan-section h3{font:500 24px/1.4 Archivo,sans-serif;margin:30px 0 14px;color:var(--tinta)}
+.commitment-body h3{font-size:23px!important}.commitment summary{padding:28px 0}
+.schedule{min-width:760px}.schedule th,.schedule td{font-size:17px;line-height:1.6;padding:20px 14px;vertical-align:top}
+.schedule tbody th{width:38%;font-size:18px}.schedule small,.schedule thead span{font-size:16px;line-height:1.6}
+.schedule small{margin:0 0 6px}.schedule-status,.schedule-note{font-size:17px!important}
+.schedule-controls label,select{font-size:18px}.section-intro{font-size:19px!important;max-width:70ch}
+[data-nav]>span:last-child{font-size:16px!important}.edition{font-size:15px}.eyebrow{font-size:14px!important}
+.contact-panel p{font-size:18px!important}.page-footer,.print-button{font-size:16px}
+@media(max-width:600px){
+ .candidate-grid{grid-template-columns:1fr;gap:30px}
+ .candidate-photo img{height:320px}
+ .candidate .candidate-name{font-size:29px!important}
+ .hero-actions .button{width:100%;justify-content:space-between}
+ .plan-section{padding:36px 0}.plan-section p,.plan-section li{font-size:18px!important}
+ h1{font-size:clamp(56px,13vw,78px);letter-spacing:-2px}
+ .edition{font-size:14px}.hero-statement{font-size:28px!important}
+}
+@media print{
+ html{font-size:11pt}.candidate-grid{grid-template-columns:repeat(2,minmax(0,1fr));break-inside:avoid}
+ .candidate-photo img{height:160px}.candidate .candidate-name{font-size:20pt!important}.candidate .candidate-role{font-size:11pt!important}
+ .plan-section p,.plan-section li,.contact-panel p{font-size:11pt!important;line-height:1.5!important}
+ .schedule{min-width:0}.schedule th,.schedule td,.schedule tbody th,.schedule small,.schedule thead span{font-size:10pt;padding:7px}
+ .schedule tr{break-inside:avoid}.schedule thead{display:table-header-group}
+}
